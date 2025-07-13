@@ -1,0 +1,8 @@
+     {
+       "builds": [
+         { "src": "unicocalc/package.json", "use": "@vercel/static-build" }
+       ],
+       "routes": [
+         { "src": "/(.*)", "dest": "unicocalc/build/$1" }
+       ]
+     }
